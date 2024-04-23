@@ -7,9 +7,12 @@ plt.rcParams['axes.unicode_minus']=False;
 plt.xlabel('x轴');
 plt.ylabel('y轴');
 plt.title('x=y');
+
+#label与legend配合使用，对该条折线进行说明
 plt.plot(x,y,label='一哈');
 plt.legend(loc='best');
-#text函数必须要使用元组，前两个参数定位，第三个参数为该位置要显示的信息
+
+#text函数对折线上的每个点进行标注，必须要使用元组，前两个参数定位，第三个参数为该位置要显示的信息
 for x1,y1 in zip(x,y):
     plt.text(x1,y1,y1)
 #网格grid axiox='x'可指定轴
