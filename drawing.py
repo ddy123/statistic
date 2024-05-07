@@ -32,13 +32,10 @@ y2=x;
 plt.plot(x,y2,label='二哈');
 plt.legend(loc='lower left');
 
-
-
 plt.show();
-
 #xticks定制坐标轴
 
-#zip将两个列表压缩成一个元组
+#zip将两个列表压缩成一个列表，列表中的每个元素为一个元组，每个元组中的数据为原列表对应的数据
 xlist=[1,2,3,4,5,6];
 ylist=[11,12,13,14,15,16];
 xy=zip(xlist,ylist);

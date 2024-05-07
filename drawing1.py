@@ -1,5 +1,6 @@
 from matplotlib import pyplot as plt
 import numpy as np
+#arange创建的是数组
 x=np.arange(10);
 y=x;
 plt.rcParams['font.sans-serif']=["fangsong"];

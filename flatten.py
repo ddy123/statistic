@@ -1,0 +1,19 @@
+import numpy as np
+a=np.array([[1,2],[3,4]]);
+b=a.flatten();
+c=a.ravel();
+print(a)
+print(b)
+print(c)
+print('----------------')
+b[1]=111
+print(a)
+print(b)
+print('----------------')
+c[1]=111
+print(a)
+print(c)
+'''
+ravel()和flatten()是将多维数据展平为一维数据，功能相同，区别在于一个是引用操作，
+一个是复制操作。ravel()展平数据后，修改后面的数据会影响前面的数据，而flatten()展平数据后，不会影响前面的数据。
+'''
